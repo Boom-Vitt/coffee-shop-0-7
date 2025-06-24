@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BoomBigNose+ Coffee Shop - ร้านกาแฟพรีเมียม เสิร์ฟกาแฟร้อน กาแฟเย็น และเบเกอรี่สดใหม่ในบรรยากาศอบอุ่น เปิดทุกวัน 06:00-21:00 น.">
+    <meta name="keywords" content="ร้านกาแฟ, กาแฟร้อน, กาแฟเย็น, เบเกอรี่, เอสเปรสโซ, ลาเต้, คาปูชิโน, อเมริกาโน, คาเฟ่, BoomBigNose">
+    <meta name="author" content="BoomBigNose+ Coffee Shop">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Thai">
+    <meta name="geo.region" content="TH-10">
+    <meta name="geo.placename" content="กรุงเทพมหานคร">
+    <meta property="og:title" content="BoomBigNose+ Coffee Shop - ร้านกาแฟพรีเมียม">
+    <meta property="og:description" content="ค้นพบกาแฟเยี่ยมยอดและการต้อนรับอันอบอุ่น เสิร์ฟกาแฟร้อน กาแฟเย็น และเบเกอรี่สดใหม่ทุกวัน">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://boombignose-coffee.com">
+    <meta property="og:image" content="https://boombignose-coffee.com/images/hero-coffee.jpg">
+    <meta property="og:locale" content="th_TH">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BoomBigNose+ Coffee Shop - ร้านกาแฟพรีเมียม">
+    <meta name="twitter:description" content="ค้นพบกาแฟเยี่ยมยอดและการต้อนรับอันอบอุ่น เสิร์ฟกาแฟร้อน กาแฟเย็น และเบเกอรี่สดใหม่">
+    <title>BoomBigNose+ Coffee Shop - ร้านกาแฟพรีเมียม | กาแฟร้อน กาแฟเย็น เบเกอรี่</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header styles */
+        .header {
+            background: rgba(139, 69, 19, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .dark-mode-btn, .cart-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .dark-mode-btn:hover, .cart-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        #cartCount {
+            background: #f4a261;
+            border-radius: 50%;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #f4a261;
+        }
+
+        /* Hero section with CSS Grid */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23d4a574" width="1200" height="800"/><circle fill="%238b4513" cx="300" cy="200" r="50"/><circle fill="%23a0522d" cx="900" cy="300" r="40"/><circle fill="%23cd853f" cx="600" cy="500" r="60"/></svg>');
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto 1fr;
+            grid-template-areas:
+                ". ."
+                "hero-content hero-image"
+                ". .";
+            align-items: center;
+            gap: 2rem;
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-content {
+            grid-area: hero-content;
+            color: #fff;
+            text-align: left;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #f4a261;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .cta-button:hover {
+            background: #e76f51;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .hero-image {
+            grid-area: hero-image;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-placeholder {
+            width: 400px;
+            height: 300px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2rem;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255,255,255,0.2);
+            overflow: hidden;
+        }
+
+        .hero-image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Common container styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Menu section styles */
+        .menu {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .menu h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #8b4513;
+        }
+
+        .menu-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            gap: 1rem;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 25px;
+            padding: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            flex: 1;
+            background: transparent;
+        }
+
+        .search-btn {
+            background: #8b4513;
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background: #a0522d;
+        }
+
+        .calculator-btn {
+            background: #f4a261;
+            border: none;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .calculator-btn:hover {
+            background: #e76f51;
+            transform: translateY(-2px);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .menu-category {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #8b4513;
+            border-bottom: 2px solid #f4a261;
+            padding-bottom: 0.5rem;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background: #f9f9f9;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border-radius: 8px;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-info {
+            flex: 1;
+        }
+
+        .item-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .item-info p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 0.9rem;
+        }
+
+        .rating-text {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .item-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.5rem;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #8b4513;
+            font-size: 1.2rem;
+        }
+
+        .add-to-cart-btn {
+            background: #8b4513;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .add-to-cart-btn:hover {
+            background: #a0522d;
+            transform: scale(1.05);
+        }
+
+        /* Contact section styles */
+        .contact {
+            padding: 5rem 0;
+            background: #fff;
+        }
+
+        .contact h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #8b4513;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #8b4513;
+        }
+
+        .info-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .contact-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #8b4513;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #f4a261;
+        }
+
+        .submit-btn {
+            background: #8b4513;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #a0522d;
+        }
+
+        /* Testimonials section styles */
+        .testimonials {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #8b4513;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-content {
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .author-info h4 {
+            color: #8b4513;
+            margin-bottom: 0.25rem;
+        }
+
+        .author-role {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .rating {
+            font-size: 1.2rem;
+        }
+
+        /* Hours table styles */
+        .hours-table {
+            margin-top: 1rem;
+        }
+
+        .hours-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hours-table th,
+        .hours-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .hours-table th {
+            background: #8b4513;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .hours-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .hours-table .weekend {
+            background: #f8f9fa;
+            font-weight: 500;
+        }
+
+        .hours-table .weekend td:last-child {
+            color: #8b4513;
+            font-weight: 600;
+        }
+
+        /* Gallery styles */
+        .gallery {
+            padding: 5rem 0;
+            background: #fff;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #8b4513;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .slide {
+            display: none;
+            position: relative;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: #fff;
+            padding: 2rem 1rem 1rem;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .slide-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: background 0.3s ease;
+        }
+
+        .slide-btn:hover {
+            background: rgba(0,0,0,0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .slide-indicators {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #fff;
+        }
+
+        /* Quiz styles */
+        .quiz {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .quiz h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #8b4513;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .quiz-start, .quiz-result {
+            text-align: center;
+        }
+
+        .quiz-start p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .quiz-btn {
+            background: #8b4513;
+            color: #fff;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-btn:hover {
+            background: #a0522d;
+            transform: translateY(-2px);
+        }
+
+        .quiz-progress {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: #8b4513;
+        }
+
+        .quiz-question h3 {
+            margin-bottom: 1.5rem;
+            color: #333;
+            font-size: 1.3rem;
+        }
+
+        .quiz-options {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .quiz-option {
+            background: #f8f9fa;
+            border: 2px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .quiz-option:hover {
+            background: #e9ecef;
+            border-color: #8b4513;
+        }
+
+        .quiz-result h3 {
+            color: #8b4513;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-result p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-header h3 {
+            color: #8b4513;
+            margin: 0;
+        }
+
+        .close {
+            font-size: 2rem;
+            cursor: pointer;
+            color: #999;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: #333;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            padding: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #8b4513;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #a0522d;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        /* Cart styles */
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .cart-item-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cart-item-controls button {
+            background: #8b4513;
+            color: #fff;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .remove-btn {
+            background: #dc3545 !important;
+        }
+
+        .cart-total {
+            text-align: right;
+            padding: 1rem 0;
+            border-top: 2px solid #8b4513;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Calculator styles */
+        .calculator {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .calc-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .calc-row label {
+            font-weight: 600;
+            color: #8b4513;
+        }
+
+        .calc-row input, .calc-row select {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .calc-result {
+            text-align: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .calc-result h4 {
+            color: #8b4513;
+            margin: 0;
+        }
+
+        .calc-btn {
+            background: #f4a261;
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .calc-btn:hover {
+            background: #e76f51;
+        }
+
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .header {
+            background: rgba(26, 26, 26, 0.95);
+        }
+
+        .dark-mode .menu,
+        .dark-mode .contact,
+        .dark-mode .gallery {
+            background: #2d2d2d;
+        }
+
+        .dark-mode .testimonials,
+        .dark-mode .quiz {
+            background: #1a1a1a;
+        }
+
+        .dark-mode .menu-category,
+        .dark-mode .testimonial-card,
+        .dark-mode .quiz-container,
+        .dark-mode .contact-form,
+        .dark-mode .search-container {
+            background: #333;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .menu-item:hover {
+            background: #404040;
+        }
+
+        .dark-mode .modal-content {
+            background: #333;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .modal-header,
+        .dark-mode .modal-footer {
+            border-color: #555;
+        }
+
+        .dark-mode .cart-item {
+            border-color: #555;
+        }
+
+        .dark-mode .calc-row input,
+        .dark-mode .calc-row select,
+        .dark-mode .search-input {
+            background: #444;
+            color: #e0e0e0;
+            border-color: #555;
+        }
+
+        .dark-mode .calc-result {
+            background: #444;
+        }
+
+        .dark-mode .quiz-option {
+            background: #444;
+            border-color: #555;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .quiz-option:hover {
+            background: #555;
+        }
+
+        .dark-mode .hours-table table {
+            background: #333;
+        }
+
+        .dark-mode .hours-table th {
+            background: #8b4513;
+        }
+
+        .dark-mode .hours-table .weekend {
+            background: #404040;
+        }
+
+        .dark-mode .slide-caption {
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+        }
+
+        /* Footer styles */
+        .footer {
+            background: #2c1810;
+            color: #fff;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #f4a261;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #f4a261;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 1rem;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "hero-content"
+                    "hero-image";
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .hero-image-placeholder {
+                width: 300px;
+                height: 200px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-author {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .hours-table table {
+                font-size: 0.9rem;
+            }
+
+            .hours-table th,
+            .hours-table td {
+                padding: 0.5rem;
+            }
+
+            .nav-controls {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .menu-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-container {
+                max-width: none;
+            }
+
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+            }
+
+            .calc-row {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .cart-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .cart-item-controls {
+                align-self: flex-end;
+            }
+
+            .slide img {
+                height: 250px;
+            }
+
+            .slide-btn {
+                padding: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+            .item-actions {
+                align-items: flex-start;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Mobile menu toggle (basic) */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">☕ BoomBigNose+</a>
+            <ul class="nav-menu">
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#menu">เมนู</a></li>
+                <li><a href="#gallery">แกลเลอรี่</a></li>
+                <li><a href="#quiz">เกมส์</a></li>
+                <li><a href="#testimonials">รีวิว</a></li>
+                <li><a href="#contact">ติดต่อเรา</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle Dark Mode">🌙</button>
+                <button id="cartToggle" class="cart-btn" aria-label="Shopping Cart">
+                    🛒 <span id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ต้อนรับ Coffee Shop</h1>
+            <p>การผสมผสานรูปแบบของเมล็ดกาแฟเมียม ฝีการชงเชี่ยวชาญ และการต้อนอบในบรรยากาศแสนสบาย</p>
+            <a href="#menu" class="cta-button">สำรวจของเรา</a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-placeholder">
+                <img src="./assets/images/coffee.jpg" alt="กาแฟเอสเปรสโซในถ้วย" width="300" height="300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>เมนูของเรา</h2>
+            <div class="menu-controls">
+                <div class="search-container">
+                    <input type="text" id="menuSearch" placeholder="ค้นหาเมนู..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="calculator-container">
+                    <button id="calculatorToggle" class="calculator-btn">🧮 คำนวณราคา</button>
+                </div>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>☕ กาแฟร้อน</h3>
+                    <div class="menu-items">
+                        <div class="menu-item" data-name="เอสเปรสโซ" data-price="120" data-category="hot">
+                            <div class="item-info">
+                                <h4>เอสเปรสโซ</h4>
+                                <p>กาแฟพรีเมียมรสชาติเข้มข้นและหอมกรุ่น</p>
+                                <div class="rating" data-rating="4.8">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="rating-text">(4.8/5)</span>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <span class="price">฿120</span>
+                                <button class="add-to-cart-btn" data-id="espresso">เพิ่มลงตะกร้า</button>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-name="คาปูชิโน" data-price="160" data-category="hot">
+                            <div class="item-info">
+                                <h4>คาปูชิโน</h4>
+                                <p>เอสเปรสโซผสมนมสตีมและฟองนมนุ่มละมุน</p>
+                                <div class="rating" data-rating="4.7">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="rating-text">(4.7/5)</span>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <span class="price">฿160</span>
+                                <button class="add-to-cart-btn" data-id="cappuccino">เพิ่มลงตะกร้า</button>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-name="ลาเต้" data-price="180" data-category="hot">
+                            <div class="item-info">
+                                <h4>ลาเต้</h4>
+                                <p>เอสเปรสโซผสมนมสตีมเนื้อเนียนนุ่ม</p>
+                                <div class="rating" data-rating="4.9">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span class="rating-text">(4.9/5)</span>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <span class="price">฿180</span>
+                                <button class="add-to-cart-btn" data-id="latte">เพิ่มลงตะกร้า</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>อเมริกาโน</h4>
+                                <p>เอสเปรสโซผสมน้ำร้อนรสชาติกลมกล่อม</p>
+                            </div>
+                            <span class="price">฿140</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>มอคค่า</h4>
+                                <p>เอสเปรสโซผสมช็อกโกแลตและนมสตีม</p>
+                            </div>
+                            <span class="price">฿190</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>� กาแฟเย็น</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>ไอซ์อเมริกาโน</h4>
+                                <p>เอสเปรสโซเย็นสดชื่นกับน้ำแข็ง</p>
+                            </div>
+                            <span class="price">฿150</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>ไอซ์ลาเต้</h4>
+                                <p>เอสเปรสโซเย็นผสมนมสดเย็นฉ่ำ</p>
+                            </div>
+                            <span class="price">฿190</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>ไอซ์คาปูชิโน</h4>
+                                <p>เอสเปรสโซเย็นกับนมเย็นและฟองนม</p>
+                            </div>
+                            <span class="price">฿170</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>ไอซ์มอคค่า</h4>
+                                <p>เอสเปรสโซเย็นผสมช็อกโกแลตและนมเย็น</p>
+                            </div>
+                            <span class="price">฿200</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>เฟรปเป้</h4>
+                                <p>กาแฟปั่นเย็นหวานหอมกับวิปครีม</p>
+                            </div>
+                            <span class="price">฿220</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>� เบเกอรี่</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>ครัวซองต์</h4>
+                                <p>เปสตรี้ฝรั่งเศสเนยหอมกรอบนอกนุ่มใน</p>
+                            </div>
+                            <span class="price">฿110</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>มัฟฟินบลูเบอร์รี่</h4>
+                                <p>อบสดใหม่ด้วยบลูเบอร์รี่ป่าหวานหอม</p>
+                            </div>
+                            <span class="price">฿150</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>สโคนช็อกโกแลต</h4>
+                                <p>สโคนช็อกโกแลตชิปรสเข้มข้น</p>
+                            </div>
+                            <span class="price">฿145</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>ซินนามอนโรล</h4>
+                                <p>ขนมปังอบอุ่นหอมอบเชยหวานนุ่ม</p>
+                            </div>
+                            <span class="price">฿170</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>เค้กช็อกโกแลต</h4>
+                                <p>เค้กช็อกโกแลตเข้มข้นหวานมัน</p>
+                            </div>
+                            <span class="price">฿180</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>แกลเลอรี่กาแฟ</h2>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="./assets/images/coffee.jpg" alt="กาแฟเอสเปรสโซ" loading="lazy">
+                    <div class="slide-caption">กาแฟเอสเปรสโซสุดพิเศษ</div>
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/coffee.jpg" alt="ลาเต้อาร์ต" loading="lazy">
+                    <div class="slide-caption">ลาเต้อาร์ตสวยงาม</div>
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/coffee.jpg" alt="บรรยากาศร้าน" loading="lazy">
+                    <div class="slide-caption">บรรยากาศร้านอบอุ่น</div>
+                </div>
+                <button class="slide-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slide-btn next" onclick="changeSlide(1)">❯</button>
+                <div class="slide-indicators">
+                    <span class="indicator active" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Quiz Section -->
+    <section id="quiz" class="quiz">
+        <div class="container">
+            <h2>เกมส์ทดสอบความรู้เรื่องกาแฟ</h2>
+            <div class="quiz-container">
+                <div id="quizStart" class="quiz-start">
+                    <p>ทดสอบความรู้เรื่องกาแฟของคุณ!</p>
+                    <button onclick="startQuiz()" class="quiz-btn">เริ่มเกมส์</button>
+                </div>
+                <div id="quizGame" class="quiz-game" style="display: none;">
+                    <div class="quiz-progress">
+                        <span id="questionNumber">1</span> / <span id="totalQuestions">5</span>
+                    </div>
+                    <div class="quiz-question">
+                        <h3 id="questionText"></h3>
+                        <div class="quiz-options" id="quizOptions"></div>
+                    </div>
+                </div>
+                <div id="quizResult" class="quiz-result" style="display: none;">
+                    <h3>ผลลัพธ์</h3>
+                    <p id="scoreText"></p>
+                    <button onclick="restartQuiz()" class="quiz-btn">เล่นอีกครั้ง</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>รีวิวจากลูกค้า</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"กาแฟที่นี่อร่อยมาก! เอสเปรสโซเข้มข้นพอดี และบรรยากาศร้านก็อบอุ่นมาก จะกลับมาอีกแน่นอน"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>คุณสมชาย ใจดี</h4>
+                            <span class="author-role">นักธุรกิจ</span>
+                        </div>
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"ร้านกาแฟที่ดีที่สุดในย่านนี้! ลาเต้หอมมัน เบเกอรี่สดใหม่ทุกวัน พนักงานบริการดีมาก"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>คุณมาลี สวยงาม</h4>
+                            <span class="author-role">ครูอนุบาล</span>
+                        </div>
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"มาทำงานที่นี่ทุกวัน Wi-Fi เร็ว กาแฟอร่อย ที่นั่งสบาย เหมาะสำหรับทำงานและพักผ่อน"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>คุณวิทย์ เก่งมาก</h4>
+                            <span class="author-role">นักเขียนอิสระ</span>
+                        </div>
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>เยี่ยมชมเรา</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 ตั้งที่</h3>
+                        <p>123 ถนนกาแฟ<br>
+                        เขตใจกลาง<br>
+                        มหาสารคาม 10110</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 ติดต่อ</h3>
+                        <p>ที่: 02-123-4567<br>
+                        อีเมล: hello@artisancoffee.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🕒 เวลาเปิด-ปิด</h3>
+                        <div class="hours-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>วัน</th>
+                                        <th>เวลาเปิด-ปิด</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>จันทร์</td>
+                                        <td>06:00 - 20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>อังคาร</td>
+                                        <td>06:00 - 20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พุธ</td>
+                                        <td>06:00 - 20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พฤหัสบดี</td>
+                                        <td>06:00 - 20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ศุกร์</td>
+                                        <td>06:00 - 20:00</td>
+                                    </tr>
+                                    <tr class="weekend">
+                                        <td>เสาร์</td>
+                                        <td>07:00 - 21:00</td>
+                                    </tr>
+                                    <tr class="weekend">
+                                        <td>อาทิตย์</td>
+                                        <td>07:00 - 21:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>ติดต่อเรา</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="ชื่อ-นามสกุล" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="อีเมล" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="เบอร์โทรศัพท์" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="ข้อความของคุณ" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>อาร์ซาน คอฟฟี่ เฮาส์</h3>
+                    <p>สร้างสรรค์ประสบการณ์กาแฟยอดเยี่ยมตั้งแต่ 2563 แก้วเล่าเรื้อราวของความหลงใหลภาพ และ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>ลิงค์ด่วน</h4>
+                    <ul>
+                        <li><a href="#home">หน้าแรก</a></li>
+                        <li><a href="#menu">เมนู</a></li>
+                        <li><a href="#testimonials">รีวิว</a></li>
+                        <li><a href="#contact">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>เรา</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2567 อาร์ซาน คอฟฟี่ เฮาส์ สงวนข์การ | ออกแบบด้วย ❤️ คนกาแฟ</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>ตะกร้าสินค้า</h3>
+                <span class="close" onclick="closeCart()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems"></div>
+                <div class="cart-total">
+                    <strong>รวม: ฿<span id="cartTotal">0</span></strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="clearCart()">ล้างตะกร้า</button>
+                <button class="btn-primary" onclick="checkout()">สั่งซื้อ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calculator Modal -->
+    <div id="calculatorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>คำนวณราคากาแฟ</h3>
+                <span class="close" onclick="closeCalculator()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="calculator">
+                    <div class="calc-row">
+                        <label>เลือกเมนู:</label>
+                        <select id="calcMenu">
+                            <option value="120">เอสเปรสโซ - ฿120</option>
+                            <option value="160">คาปูชิโน - ฿160</option>
+                            <option value="180">ลาเต้ - ฿180</option>
+                            <option value="140">อเมริกาโน - ฿140</option>
+                        </select>
+                    </div>
+                    <div class="calc-row">
+                        <label>จำนวน:</label>
+                        <input type="number" id="calcQuantity" value="1" min="1" max="99">
+                    </div>
+                    <div class="calc-row">
+                        <label>ส่วนลด (%):</label>
+                        <input type="number" id="calcDiscount" value="0" min="0" max="100">
+                    </div>
+                    <div class="calc-result">
+                        <h4>ราคารวม: ฿<span id="calcTotal">120</span></h4>
+                    </div>
+                    <button onclick="calculatePrice()" class="calc-btn">คำนวณ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let cart = [];
+        let slideIndex = 0;
+        let quizData = [
+            {
+                question: "กาแฟเอสเปรสโซมาจากประเทศใด?",
+                options: ["อิตาลี", "ฝรั่งเศส", "เยอรมนี", "สเปน"],
+                correct: 0
+            },
+            {
+                question: "คาเฟอีนในกาแฟมีผลอย่างไร?",
+                options: ["ทำให้ง่วง", "กระตุ้นระบบประสาท", "ลดความดัน", "เพิ่มน้ำหนัก"],
+                correct: 1
+            },
+            {
+                question: "ลาเต้และคาปูชิโนต่างกันอย่างไร?",
+                options: ["ไม่ต่างกัน", "ลาเต้มีนมมากกว่า", "คาปูชิโนมีนมมากกว่า", "ลาเต้ไม่มีฟองนม"],
+                correct: 1
+            },
+            {
+                question: "เมล็ดกาแฟอาราบิก้ามีรสชาติอย่างไร?",
+                options: ["ขม", "หวาน", "เปรี้ยว", "หวานและหอม"],
+                correct: 3
+            },
+            {
+                question: "การชงกาแฟแบบ Pour Over คืออะไร?",
+                options: ["ชงด้วยเครื่อง", "ชงด้วยการเทน้ำร้อน", "ชงด้วยไอน้ำ", "ชงด้วยน้ำเย็น"],
+                correct: 1
+            }
+        ];
+        let currentQuiz = 0;
+        let quizScore = 0;
+
+        // Dark mode functionality
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDark);
+            document.getElementById('darkModeToggle').textContent = isDark ? '☀️' : '🌙';
+        }
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+            document.getElementById('darkModeToggle').textContent = '☀️';
+        }
+
+        // Shopping cart functions
+        function addToCart(id, name, price) {
+            const existingItem = cart.find(item => item.id === id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ id, name, price: parseInt(price), quantity: 1 });
+            }
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartCount = document.getElementById('cartCount');
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCount.textContent = totalItems;
+        }
+
+        function showCart() {
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                cartItems.innerHTML += `
+                    <div class="cart-item">
+                        <span>${item.name}</span>
+                        <div class="cart-item-controls">
+                            <button onclick="updateQuantity('${item.id}', -1)">-</button>
+                            <span>${item.quantity}</span>
+                            <button onclick="updateQuantity('${item.id}', 1)">+</button>
+                            <span>฿${itemTotal}</span>
+                            <button onclick="removeFromCart('${item.id}')" class="remove-btn">×</button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            cartTotal.textContent = total;
+            document.getElementById('cartModal').style.display = 'block';
+        }
+
+        function updateQuantity(id, change) {
+            const item = cart.find(item => item.id === id);
+            if (item) {
+                item.quantity += change;
+                if (item.quantity <= 0) {
+                    removeFromCart(id);
+                } else {
+                    showCart();
+                    updateCartDisplay();
+                }
+            }
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            showCart();
+            updateCartDisplay();
+        }
+
+        function clearCart() {
+            cart = [];
+            showCart();
+            updateCartDisplay();
+        }
+
+        function closeCart() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert('ตะกร้าสินค้าว่างเปล่า');
+                return;
+            }
+            alert('ขอบคุณสำหรับการสั่งซื้อ! เราจะติดต่อกลับในไม่ช้า');
+            clearCart();
+            closeCart();
+        }
+
+        // Search functionality
+        function searchMenu() {
+            const searchTerm = document.getElementById('menuSearch').value.toLowerCase();
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            menuItems.forEach(item => {
+                const name = item.dataset.name.toLowerCase();
+                const description = item.querySelector('p').textContent.toLowerCase();
+
+                if (name.includes(searchTerm) || description.includes(searchTerm)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Calculator functions
+        function showCalculator() {
+            document.getElementById('calculatorModal').style.display = 'block';
+            calculatePrice();
+        }
+
+        function closeCalculator() {
+            document.getElementById('calculatorModal').style.display = 'none';
+        }
+
+        function calculatePrice() {
+            const price = parseInt(document.getElementById('calcMenu').value);
+            const quantity = parseInt(document.getElementById('calcQuantity').value);
+            const discount = parseInt(document.getElementById('calcDiscount').value);
+
+            const subtotal = price * quantity;
+            const discountAmount = (subtotal * discount) / 100;
+            const total = subtotal - discountAmount;
+
+            document.getElementById('calcTotal').textContent = total;
+        }
+
+        // Slideshow functions
+        function changeSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            const indicators = document.querySelectorAll('.indicator');
+
+            slides[slideIndex].classList.remove('active');
+            indicators[slideIndex].classList.remove('active');
+
+            slideIndex += direction;
+
+            if (slideIndex >= slides.length) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = slides.length - 1;
+
+            slides[slideIndex].classList.add('active');
+            indicators[slideIndex].classList.add('active');
+        }
+
+        function currentSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            const indicators = document.querySelectorAll('.indicator');
+
+            slides[slideIndex].classList.remove('active');
+            indicators[slideIndex].classList.remove('active');
+
+            slideIndex = index - 1;
+
+            slides[slideIndex].classList.add('active');
+            indicators[slideIndex].classList.add('active');
+        }
+
+        // Auto slideshow
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Quiz functions
+        function startQuiz() {
+            document.getElementById('quizStart').style.display = 'none';
+            document.getElementById('quizGame').style.display = 'block';
+            currentQuiz = 0;
+            quizScore = 0;
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const question = quizData[currentQuiz];
+            document.getElementById('questionNumber').textContent = currentQuiz + 1;
+            document.getElementById('questionText').textContent = question.question;
+
+            const optionsContainer = document.getElementById('quizOptions');
+            optionsContainer.innerHTML = '';
+
+            question.options.forEach((option, index) => {
+                optionsContainer.innerHTML += `
+                    <button class="quiz-option" onclick="selectAnswer(${index})">${option}</button>
+                `;
+            });
+        }
+
+        function selectAnswer(selectedIndex) {
+            const question = quizData[currentQuiz];
+            if (selectedIndex === question.correct) {
+                quizScore++;
+            }
+
+            currentQuiz++;
+
+            if (currentQuiz < quizData.length) {
+                setTimeout(showQuestion, 1000);
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quizGame').style.display = 'none';
+            document.getElementById('quizResult').style.display = 'block';
+
+            const percentage = (quizScore / quizData.length) * 100;
+            let message = '';
+
+            if (percentage >= 80) {
+                message = 'ยอดเยี่ยม! คุณเป็นผู้เชี่ยวชาญด้านกาแฟ!';
+            } else if (percentage >= 60) {
+                message = 'ดีมาก! คุณมีความรู้เรื่องกาแฟพอสมควร';
+            } else {
+                message = 'ไม่เป็นไร ลองศึกษาเพิ่มเติมและเล่นใหม่นะ';
+            }
+
+            document.getElementById('scoreText').textContent = `คะแนน: ${quizScore}/${quizData.length} (${percentage.toFixed(0)}%) - ${message}`;
+        }
+
+        function restartQuiz() {
+            document.getElementById('quizResult').style.display = 'none';
+            document.getElementById('quizStart').style.display = 'block';
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark mode toggle
+            document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+
+            // Cart toggle
+            document.getElementById('cartToggle').addEventListener('click', showCart);
+
+            // Calculator toggle
+            document.getElementById('calculatorToggle').addEventListener('click', showCalculator);
+
+            // Search functionality
+            document.getElementById('menuSearch').addEventListener('input', searchMenu);
+
+            // Calculator inputs
+            document.getElementById('calcMenu').addEventListener('change', calculatePrice);
+            document.getElementById('calcQuantity').addEventListener('input', calculatePrice);
+            document.getElementById('calcDiscount').addEventListener('input', calculatePrice);
+
+            // Add to cart buttons
+            document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const menuItem = this.closest('.menu-item');
+                    const id = this.dataset.id;
+                    const name = menuItem.dataset.name;
+                    const price = menuItem.dataset.price;
+                    addToCart(id, name, price);
+                });
+            });
+
+            // Close modals when clicking outside
+            window.addEventListener('click', function(event) {
+                const cartModal = document.getElementById('cartModal');
+                const calcModal = document.getElementById('calculatorModal');
+
+                if (event.target === cartModal) {
+                    closeCart();
+                }
+                if (event.target === calcModal) {
+                    closeCalculator();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "thai-coffee-shop-website",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "description": "Thai Coffee Shop Website - อาร์ติซาน คอฟฟี่ เฮาส์",
+  "keywords": ["coffee", "thai", "website", "vite"],
+  "author": "",
+  "license": "ISC"
+}
